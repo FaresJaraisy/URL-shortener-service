@@ -4,11 +4,11 @@ URL shortener service<br />
 Input: long URL.<br />
 Output: a short URL that redirects to the inserted URL.
 
-#Requirements
+# Requirements
 
 Flask (pip install flask) is required.
 
-#run
+# run
 
 1-cd into Source code folder.
 2-execute command : python app.py
