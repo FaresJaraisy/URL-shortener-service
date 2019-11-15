@@ -1,0 +1,28 @@
+<!--A page that recive statistics variables from the DB and showing them in 3 lists -->
+{% extends 'layout.html' %}
+
+{% block body %}
+{{msg}}</br>
+<label class="text-muted" style="font-weight: bold;">Storage statistics:</label> </br>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Number of URLs in our database: {{ urlnum }}</li>
+  <li class="list-group-item">Number of URLs added in the last minute: {{lastminute}}</li>
+  <li class="list-group-item">Number of URLs added in the last hour: {{lasthour}}</li>
+  <li class="list-group-item">Number of URLs added in the last day: {{lastday}}</li>
+</ul>
+
+</br></br></br>
+<label class="text-muted" style="font-weight: bold;">Redirections statistics:</label> </br>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Number of redirections in the last minute: {{lastMinuteRedirections}}</li>
+  <li class="list-group-item">Number of redirections in the last hour: {{lastHourRedirections}}</li>
+  <li class="list-group-item">Number of redirections in the last day: {{lastDayRedirections}}</li>
+</ul>
+</br></br></br>
+<label class="text-muted" style="font-weight: bold;">Errors statistics:</label> </br>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Number of errors in the last minute: {{lastMinuteerrors}}</li>
+  <li class="list-group-item">Number of errors in the last hour: {{lastHourerrors}}</li>
+  <li class="list-group-item">Number of errors in the last day: {{lastDayerrors}}</li>
+</ul>
+{% endblock %}

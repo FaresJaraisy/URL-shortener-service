@@ -1,0 +1,18 @@
+<!-- Home page component include navbar and form for entring long url-->
+
+{% extends 'layout.html' %}
+{% block body %}
+    <div style="  margin: auto;
+                  width: 50%;
+                  margin-top:5rem;
+                  padding: 10px;
+                  top">
+        <form action = "{{url_for('addurl')}}" method = "post">
+          <label class="text-muted" style="font-weight: bold;">Enter long URL:</label>
+          <!--Validate input url by regular expression -->
+          <input  class="form-control" id="longURL"  placeholder="Enter your URL" name = "inputurl" pattern="^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$" required/>
+          <br/>
+          <input type = "submit" class="btn btn-primary" value = "Get short URL" />
+         </form>
+    </div>
+{% endblock %}
