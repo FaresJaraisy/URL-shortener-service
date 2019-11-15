@@ -1,8 +1,8 @@
 # URL-shortener-service
 
-URL shortener service
-Input: long URL.
-Output: a short URL that redirects to the inserted URL.
+URL shortener service<br />
+Input: long URL.<br />
+Output: a short URL that redirects to the inserted URL.<br />
 
 #Requirements
 
