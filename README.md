@@ -2,7 +2,7 @@
 
 URL shortener service<br />
 Input: long URL.<br />
-Output: a short URL that redirects to the inserted URL.<br />
+Output: a short URL that redirects to the inserted URL.
 
 #Requirements
 
